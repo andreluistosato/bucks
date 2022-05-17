@@ -13,7 +13,12 @@ class BucksApplicationTests {
   void contextLoads() {}
 
   @Test
-  void checkIfOnePlusOneIsTwo() {
+  void successfulTest() {
     assertThat(1 + 1, Matchers.is(2));
+  }
+
+  @Test
+  void invalidTest() {
+    assertThat(1 + 1, Matchers.is(3));
   }
 }
